@@ -2,6 +2,7 @@ const express = require('express');
 const supabaseClient = require('@supabase/supabase-js');
 const app = express();
 
+//const host = window.location.origin;
 const port = 4000;
 
 
