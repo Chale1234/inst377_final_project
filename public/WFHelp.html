@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title> Help Page </title>
+        <link rel = "stylesheet" href = "WF.css">
+    </head>
+
+    <body>
+
+        <!-- Header Section -->
+        <div class = "logo-container">
+            <img src = "Weatherly_Logo.jpeg" class = "logo">
+            <h1> Weatherly </h1>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav id="NBar">
+            <ul>
+                <li> <a href = "WFHome.html"> Home </a></li>
+                <li><a href = "WForecast.html"> Weather Forecast </a></li>
+                <li><a href = "WFPollution.html" class = "active"> Air Pollution </a></li>
+                <li><a href = "WFAbout.html"> About Us </a></li>
+                <li> <a href = "WFHelp.html"> Help </a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class = "main-content">
+
+            <!-- Help Section -->
+            <section class = "help-section">
+                <h2> How to Use Weatherly </h2>
+                <p> Welcome to Weatherly! This guide will help you make the most out of our application. </p>
+
+                <!-- Getting Started -->
+                <div class = "help-topic">
+                    <h3> Getting Started </h3>
+                    <p> To begin using Weatherly, follow these simple steps: </p>
+                    <ol>
+                        <li> Navigate to the <strong> Home </strong> page to check the current weather in your area. </li>
+                        <li> Use the search form to enter your city name or coordinates. </li>
+                        <li> Click on <strong> Get Weather </strong> to view the latest weather updates. </li>
+                        <li> Explore the <strong> Air Pollution </strong> page to see detailed pollution levels and health recommendations. </li>
+                    </ol>
+                </div>
+
+                <!-- Checking Weather Forecast -->
+                <div class = "help-topic">
+                    <h3>Checking Weather Forecast</h3>
+
+                    <p>Here's how you can check the weather forecast:</p>
+
+                    <ul>
+                        <li> On the Home page, enter your city name in the search bar. </li>
+                        <li> Click the <strong>Get Weather</strong> button. </li>
+                        <li> View the current temperature, weather conditions, and other relevant data displayed on the dashboard. </li>
+                        <li> Navigate through different sections to see weekly forecasts and additional weather details. </li>
+                    </ul>
+                </div>
+
+                <!-- Viewing Air Pollution Data -->
+                <div class = "help-topic">
+                    <h3> Viewing Air Pollution Data </h3>
+                    <p> To access air pollution information: </p>
+                    <ol>
+                        <li> Go to the <strong> Air Pollution </strong> page via the navigation menu. </li>
+                        <li> Enter your location in the provided form to fetch pollution data specific to your area. </li>
+                        <li> Review the Air Quality Index (AQI), PM2.5, and PM10 levels displayed. </li>
+                        <li> Check out the health recommendations to stay safe during high pollution periods. </li>
+                        <li> Use the interactive map to visualize pollution levels in different regions. </li>
+                    </ol>
+                </div>
+
+                <!-- Understanding AQI -->
+                <div class = "help-topic">
+                    <h3> Understanding Air Quality Index (AQI) </h3>
+                    <p> The AQI is a standardized indicator used to communicate how polluted the air currently is or how polluted it 
+                        is forecast to become. Here's a quick overview: </p>
+                    <ul>
+                        <li><span class = "aqi-legend good"></span> <strong> Good (0-50): </strong> Air quality is satisfactory, and air pollution 
+                            poses little or no risk.</li>
+                        <li><span class = "aqi-legend moderate"></span> <strong> Moderate (51-100): </strong> Air quality is acceptable; however, 
+                            there may be a risk for some people, particularly those who are unusually sensitive to air pollution.</li>
+                        <li><span class = "aqi-legend unhealthy-sensitive"></span> <strong> Unhealthy for Sensitive Groups (101-150):</strong> Members 
+                            of sensitive groups may experience health effects. The general public is less likely to be affected.</li>
+                        <li><span class = "aqi-legend unhealthy"></span> <strong> Unhealthy (151-200): </strong> Everyone may begin to experience 
+                            health effects; members of sensitive groups may experience more serious health effects.</li>
+                        <li><span class = "aqi-legend very-unhealthy"></span> <strong> Very Unhealthy (201-300):</strong> Health warnings of 
+                            emergency conditions. The entire population is more likely to be affected.</li>
+                        <li><span class = "aqi-legend hazardous"></span> <strong> Hazardous (301-500): </strong> Health alert: everyone may experience 
+                            more serious health effects.</li>
+                    </ul>
+                </div>
+
+                <!-- Troubleshooting -->
+                <div class = "help-topic">
+                    <h3> Troubleshooting </h3>
+                    <p> If you encounter any issues while using Weatherly, try the following solutions: </p>
+                    <ul>
+                        <li><strong> Unable to fetch data: </strong> Ensure that your internet connection is stable and try refreshing the page. </li>
+                        <li><strong> Incorrect location data: </strong> Double-check the spelling of your city name or ensure you're using the 
+                            correct coordinates. </li>
+                        <li><strong> API issues: </strong> If the data isn't loading, it might be an issue with our data provider. 
+                            Please try again later.</li>
+                        <li><strong> Other problems: </strong> Contact our support team at <a href="mailto:support@weatherly.com"> support@weatherly.com </a> for further assistance.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Sidebar Section -->
+            <aside class = "sidebar">
+                <div class = "faq-section">
+                    <h3> Frequently Asked Questions </h3>
+                    <ul>
+                        <li><strong> How accurate is the weather forecast? </strong><br> Weatherly uses reliable data sources to provide accurate 
+                            forecasts, but weather can be unpredictable. </li>
+
+                        <li><strong> Can I track pollution in multiple cities? </strong><br> Yes, you can search for and track pollution 
+                            levels in any city by entering its name or coordinates. </li>
+
+                        <li><strong> Is my data secure? </strong><br> Yes, Weatherly ensures that all user data is handled securely and 
+                            in accordance with our privacy policy. </li>
+                    </ul>
+                </div>
+
+                <div class = "resources-section">
+                    <h3> Additional Resources </h3>
+                    <ul>
+                        <li><a href = "https://openweathermap.org/api" target="_blank"> OpenWeather API </a></li>
+                        <li><a href = "https://aqicn.org/api/" target = "_blank"> AQICN API </a></li>
+                        <li><a href = "privacy.html"> Privacy Policy </a></li>
+                        <li><a href = "contact.html"> Contact Us </a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p> &copy; 2024 Weatherly | Powered by Weatherly</p>
+        </footer>
+    </body>
+    </html>

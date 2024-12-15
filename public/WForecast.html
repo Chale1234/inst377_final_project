@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Weather Forecast</title>
+    <link rel = "stylesheet" href = "WF.css">
+    <script src = "WForecastPage.js" defer > </script>
+    <link rel = "stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity = "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin =""/>
+    <script src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity = "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin = ""></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class = "logo-container">
+        <img src = "Weatherly_Logo.jpeg" class = "logo">
+        <h1> Weatherly </h1>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav id = "NBar">
+        <ul>
+            <li> <a href = "WFHome.html"> Home </a></li>
+            <li> <a href = "WForecast.html"> Weather Forecast </a></li>
+            <li> <a href = "WFPollution.html"> Air Pollution </a></li>
+            <li> <a href= "WFAbout.html"> About Us </a></li>
+            <li> <a href = "WFHelp.html"> Help </a></li>
+        </ul>
+     </nav>
+    <main>
+
+        <section class = "weather-info forcast-info">
+            <h2 class = "WDetails"> Weather Details for <span id = "location-name"> [Location] </span></h2>
+
+            <div id = "forecast-container" class = "forecast-grid">
+                <div class = "weather-card">
+                    <h3> Temperature </h3>
+                    <p> --°C </p>
+                </div>
+
+                <div class = "weather-card">
+                    <h3> Feels Like </h3>
+                    <p> --°C </p>
+                </div>
+
+                <div class = "weather-card">
+                    <h3>Min Temp</h3>
+                    <p>--°C</p>
+                </div>
+
+                <div class = "weather-card">
+                    <h3>Max Temp</h3>
+                    <p>--°C</p>
+                </div>
+
+                <div class = "weather-card">
+                    <h3>Pressure</h3>
+                    <p>-- hPa</p>
+                </div>
+
+                <div class = "weather-card">
+                    <h3>Humidity</h3>
+                    <p>--%</p>
+                </div>
+
+                <div class = "weather-card">
+                    <h3> Condition </h3>
+                    <p> -- </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Displaying the weather forecast map -->
+        <section class = "map-container">
+            <h2 class = "MapTitle"> Weather Map </h2>
+
+            <div id = "weather-map" style = "width: 100%; height: 500px;">
+
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p> &copy; 2024 Weather App. All Rights Reserved. </p>
+    </footer>
+</body>
+</html>

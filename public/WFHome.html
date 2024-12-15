@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title> Weather Forecast Home Page </title>
+        <link rel = "stylesheet" href= "WF.css">
+    </head>
+
+    <body>
+
+        <!-- Header Section -->
+        <div class = "logo-container">
+            <img src = "Weatherly_Logo.jpeg" class = "logo">
+            <h1> Weatherly </h1>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav id = "NBar">
+            <ul>
+                <li> <a href = "WFHome.html"> Home </a></li>
+                <li> <a href = "WForecast.html"> Weather Forecast </a></li>
+                <li> <a href = "WFPollution.html"> Air Pollution </a></li>
+                <li> <a href= "WFAbout.html"> About Us </a></li>
+                <li> <a href = "WFHelp.html"> Help </a></li>
+            </ul>
+        </nav>
+
+        <!-- Form Section -->
+        <div class = "container">
+            <div class = "form-section">
+
+            <h2>Check Weather for Your City</h2>
+            
+            <form id = "cityForm">
+                <input type = "text" id = "cityInput" placeholder = "Enter city name" required>
+                <button type = "submit"> Get Weather </button>
+            </form>
+        </div>
+
+        <!-- Weather Section -->
+        <div class = "weather-section">
+            <h2> Current Weather </h2>
+       
+            <div class = "weather-info">
+                <div class = "weather-card">
+                    <h3> Temperature </h3>
+                    <p> --°C </p>
+                </div>
+            <div class = "weather-card">
+                    <h3> Condition </h3>
+                    <p> -- </p>
+            </div>
+            <div class = "weather-card">
+                <h3> Humidity </h3>
+                <p> --% </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2024 Weather Dashboard | Powered by Weatherly </p>
+    </footer>
+    <script src = "WFHomePage.js" defer> </script>
+    
+</body>
+</html>

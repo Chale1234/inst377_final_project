@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title> Air Pollution Page </title>
+        <link rel = "stylesheet" href= "WF.css">
+        <script src = "WFPollutionPage.js" defer > </script>
+    </head>
+
+    <body>
+
+        <!-- Header Section -->
+        <div class = "logo-container">
+            <img src = "Weatherly_Logo.jpeg" class = "logo">
+            <h1> Weatherly </h1>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav id="NBar">
+            <ul>
+                <li> <a href = "WFHome.html"> Home </a></li>
+                <li><a href = "WForecast.html"> Weather Forecast </a></li>
+                <li><a href = "WFPollution.html" class = "active"> Air Pollution </a></li>
+                <li><a href = "WFAbout.html"> About Us </a></li>
+                <li> <a href = "WFHelp.html"> Help </a></li>
+            </ul>
+        </nav>
+
+        <!-- Pollution Section -->
+        <main class = "pollution-section">
+
+            <h2> Air Pollution Information </h2>
+            <p> Below is the air quality information for your selected location: </p>
+
+         <!-- Location Form Section -->
+         <div class = "location-form-container">
+            <h3>Enter Your Location to Check Pollution Levels</h3>
+            <form id = "pollutionForm" class = "pollution-form">
+                <input type = "text" i = "cityInput" placeholder = "Enter city name or coordinates" required>
+                <button type = "submit"> Get Pollution Data </button>
+            </form>
+        </div>
+
+        <!-- Air Quality Index Section -->
+        <div class = "aqi-container">
+            <div class = "aqi-card">
+                <h3> Air Quality Index (AQI) </h3>
+                <p class = "aqi-value">-- </p>
+                <p> Good / Moderate / Unhealthy </p>
+            </div>
+            <div class = "aqi-card">
+                <h3> PM2.5 Level </h3>
+                <p class = "aqi-value"> -- μg/m³ </p>
+            </div>
+            <div class = "aqi-card">
+                <h3> PM10 Level </h3>
+                <p class = "aqi-value"> -- μg/m³ </p>
+            </div>
+        </div>
+
+        <!-- Health Recommendations Section -->
+        <div class="health-tips">
+            <h3> Health Recommendations During High Level of Air Pollution </h3>
+            <ul>
+                <li> Limit outdoor activities during high air pollution levels and do not go outisde </li>
+                <li> Use an air purifier indoors </li>
+                <li> Wear a mask if necessary when outside </li>
+                <li> Stay hydrated to flush out toxins from the air pollution </li>
+            </ul>
+        </div>
+
+        <!-- Pollution Map Section -->
+        <div class = "pollution-map">
+            <h3> Weather Map </h3>
+            <iframe 
+                src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093725!2d144.95373531531686!3d-37.81627974257457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5774dd0c7e1e04d!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1698431824573!5m2!1sen!2sus" 
+                width = "100%" 
+                height = "550" 
+                style = "border:0;" 
+                allowfullscreen = "" 
+                loading = "lazy">
+            </iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Weather Dashboard | Powered by Weatherly </p>
+    </footer>
+</body>
+</html>
