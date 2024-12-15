@@ -77,4 +77,46 @@ BackEnd:
     ├── /public               # Static files (index.html, etc.)
     └── package.json          # React dependencies and scripts
 
-Docker: This helps run the app in isolated environments, especially useful for testing.
+Installation Guide :
+Clone The repository 
+git clone git@github.com:Chale1234/inst377_final_project.git
+
+Install dependenccies:
+Install @supabase/supabase-js
+Install express: version 4.21.2 and above 
+Install nodemone: version 3.1.9
+install npm
+
+
+Environmental variable:
+port = 4000
+DatabaseURL= 
+
+Running the application 
+To run the weatherly app on your local machin, use the following command:
+npm start
+http://localhost:4000
+
+Running on a server 
+
+For Production environments, follow these steps to run the application on a server:
+Ensure you have node.js, and express.js installed on the server
+Upload the code to the server 
+set up necessary environment variable in the server
+
+use npm start to start the server in production mode
+
+API Documentation:
+The weatherly app exposes several RESTful APIs for interacting with the system:
+GET EndPoints
+GET Response :
+{
+  "CityName": "Silver Spring",
+  "search_count": 1,
+  
+}
+Post Sample:
+{
+"CityName": "Rockville",
+"search_count": 1
+
