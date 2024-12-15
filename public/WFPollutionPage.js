@@ -1,3 +1,5 @@
+const host = window.location.origin;
+
 document.addEventListener("DOMContentLoaded", () => {
     // Get references to the DOM elements
     const pollutionForm = document.getElementById('pollutionForm');

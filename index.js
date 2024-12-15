@@ -2,7 +2,7 @@ const express = require('express');
 const supabaseClient = require('@supabase/supabase-js');
 const app = express();
 
-//const host = window.location.origin;
+const host = window.location.origin;
 const port = 4000;
 
 
@@ -80,6 +80,39 @@ app.get('/top-cities', async (req, res) => {
     }
 });
 // API Endpoint 2: POST /weather - Update search count for a specific city
+// Function to send a city name to the backend
+async function updateWeatherSearch(cityName) {
+    try {
+        // Send a POST request to the weather endpoint with the city name
+        const response = await fetch(`${host}/weather`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',  // Set the content type to JSON
+            },
+            body: JSON.stringify({
+                cityName: cityName,  // Pass the city name to the server
+            }),
+        });
+
+        // Check if the response is okay (status 200-299)
+        if (!response.ok) {
+            const errorData = await response.json();
+            console.error('Error:', errorData.error); // Log the error from server response
+            return;
+        }
+
+        // Parse the JSON response from the server
+        const data = await response.json();
+        console.log('Success:', data.message); // Log the success message
+    } catch (error) {
+        console.error('Error fetching data:', error); // Handle any network or fetch errors
+    }
+}
+
+// Example usage: Call the function with a city name
+updateWeatherSearch('New York');
+
+
 app.post('/weather', async (req, res) => {
 
     console.log('Request body:', req.body); // Debugging line

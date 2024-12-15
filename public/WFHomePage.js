@@ -1,5 +1,7 @@
 // Redirect to the Weather forecast page once users input their city name
 
+const host = window.location.origin;
+
 document.getElementById("cityForm").addEventListener("submit", function (event) {
     event.preventDefault();
     const city = document.getElementById("cityInput").value.trim();
