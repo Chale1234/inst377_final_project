@@ -2,8 +2,9 @@ const express = require('express');
 const supabaseClient = require('@supabase/supabase-js');
 const app = express();
 
-const host = window.location.origin;
-//const port = 4000;
+//const host = window.location.origin;
+const port = process.env.PORT || 4000;
+const host = `http://localhost:${port}`;
 
 
 //app.use(bodyparser.json());
