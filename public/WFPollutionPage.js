@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Event listener for the form submission
     pollutionForm.addEventListener('submit', (event) => {
         event.preventDefault();
+    
         const location = cityInput.value.trim();
 
         if (location) {
