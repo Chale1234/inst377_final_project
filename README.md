@@ -28,3 +28,53 @@ Mozilla Firefox: Also supports recent versions on all major operating systems.
 Safari: Optimized for macOS and iOS users.
 Microsoft Edge: Compatible with Windows and macOS.
 No matter your device, Weatherly adapts to give you a seamless experience—whether you’re browsing from a desktop or checking the weather on your phone.
+
+
+
+
+Developer Manual: Weatherly
+1. Welcome to Weatherly!
+Welcome to Weatherly—we’re excited to have you on board! This manual is here to help you get up and running with the project, understand our coding standards, and contribute effectively. Whether you’re new to the project or just need a refresher, this guide is your go-to resource for everything you’ll need to start building, testing, and deploying.
+
+2. What is Weatherly?
+Weatherly is a web application designed to help users track and get real-time information about the weather in different locations. It’s more than just a weather app—it provides detailed forecasts, historical data, and even weather alerts to help users plan ahead.
+
+We’re using a modern stack for this project:
+
+Frontend: React and Redux for the user interface
+Backend: Node.js and Express for handling business logic
+Database: PostgreSQL to store everything securely
+Dev Tools: Git for version control, and vercel for deployment
+3. Setting Up Your Development Environment
+Before you start coding, let’s make sure your development environment is ready to go. Here’s a simple guide to get everything up and running:
+
+3.1 Prerequisites
+Make sure you have these installed on your computer:
+
+Node.js (version 14.x or higher)
+PostgreSQL (version 12.x or higher)
+Git (for version control)
+
+
+BackEnd:
+/backend
+    ├── /src
+    │   ├── /controllers      # Handles incoming requests
+    │   ├── /models           # Database models
+    │   ├── /routes           # API routes
+    │   ├── /middleware       # Middlewares (authentication, logging, etc.)
+    │   └── /utils            # Helper functions
+    ├── /migrations           # Database schema changes
+    └── package.json          # Project dependencies and scripts
+  Front End:
+  /frontend
+    ├── /src
+    │   ├── /components       # Reusable UI components
+    │   ├── /redux            # Redux store and actions
+    │   ├── /views            # Different pages of the app
+    │   ├── /assets           # Images, CSS, and other assets
+    │   └── /utils            # Helper functions
+    ├── /public               # Static files (index.html, etc.)
+    └── package.json          # React dependencies and scripts
+
+Docker: This helps run the app in isolated environments, especially useful for testing.
